@@ -1,0 +1,10 @@
+{
+	"PORT":3000,
+	"mongo" : {
+        "replicas"  : ["localhost:27017"],
+        "port"      : 27017,
+        "database"  : "express-angular",
+        "username"  : "hola",
+        "password"  : "pola"
+    }
+}

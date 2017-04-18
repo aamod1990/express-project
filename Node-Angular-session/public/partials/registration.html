@@ -1,0 +1,75 @@
+<div class="container" ng-controller="registrationController">
+    <div class="row main">
+        <div class="panel-heading">
+            <div class="panel-title text-center">
+                <h1 class="title">User Details</h1>
+                <hr />
+            </div>
+        </div>
+        <div ng-show="error" class="alert alert-danger">{{errorMessage}}</div>
+        <div class="main-login main-center">
+            <form class="form-horizontal" ng-submit="userRegistration()">
+                <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="name" id="name" ng-model="registrationForm.name" placeholder="Enter your Name" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="email" id="email" ng-model="registrationForm.email" placeholder="Enter your Email" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Mobile</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                            <input type="text" class="form-control" name="mobile" id="mobile" ng-model="registrationForm.mobile"  placeholder="Enter your mobile" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="password" id="password" ng-model="registrationForm.password" placeholder="Enter your Password" required/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input type="password" class="form-control" name="confirm" id="confirm" ng-model="registrationForm.confirm" placeholder="Confirm your Password" required/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="type" class="cols-sm-2 control-label">Account Type</label>
+                    <div class="cols-sm-2">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="checkbox" class="form-control" name="type" value="admin" id="type" ng-model="registrationForm.type" required/>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!/login">Login</a>
+                <div class="form-group ">
+                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button" ng-disabled="disabled">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

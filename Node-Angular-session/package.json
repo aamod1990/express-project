@@ -1,0 +1,24 @@
+{
+  "name": "express-angular-application",
+  "version": "1.0.0",
+  "description": "express application with angular js mongodb and passport authentication",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://nodeproject.git.beanstalkapp.com/node_projects.git"
+  },
+  "keywords": [
+    "express-angular-application",
+    "mean-application",
+    "express-passport"
+  ],
+  "author": "Aamod Tiwari",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.15.2"
+  }
+}
